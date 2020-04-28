@@ -140,6 +140,8 @@ class Game extends React.Component {
     let status;
     if (winner) {
       status = 'Win: ' + winner.val;
+    } else if (this.state.stepNumber === 9) {
+      status = 'Sorry, there is no move available';
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
