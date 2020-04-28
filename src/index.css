@@ -34,14 +34,15 @@ body {
     padding: 0;
     text-align: center;
     width: 34px;
-  }
+  }  
   
   .square:focus {
     outline: none;
+    /* background: rgb(252, 229, 229); */
   }
   
-  .kbd-navigation .square:focus {
-    background: #ddd;
+ .selected {
+    background: rgb(253, 111, 111);
   }
   
   .game {
